@@ -1,0 +1,34 @@
+:root{
+  --bg:#f7f7fb;
+  --fg:#222;
+  --accent:#2b7cff;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;line-height:1.4;color:var(--fg);background:var(--bg);margin:0;padding:24px}
+.page{max-width:960px;margin:0 auto}
+h1{font-size:1.6rem;margin:0 0 12px}
+.lead{color:#444;margin-bottom:18px}
+.demo{background:#fff;border-radius:8px;padding:16px;box-shadow:0 6px 18px rgba(0,0,0,0.06);}
+.demo img{display:block;max-width:100%;height:auto;border-radius:4px;cursor:crosshair}
+.notes{font-size:.9rem;color:#666;margin-top:14px}
+
+/* Magnifier lens styles (created dynamically but keep defaults here) */
+.magnifier-lens{
+  position: absolute;
+  pointer-events: none; /* let mouse events fall through to image */
+  border-radius: 50%;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+  border: 3px solid rgba(255,255,255,0.85);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  transform: translate(-50%,-50%);
+  z-index: 9999;
+}
+
+/* Responsive: smaller lens on small screens if using data-lens-size left default */
+@media (max-width:480px){
+  .magnifier-lens{display:none} /* hide default lens on very small screens; touch toggles zoom instead */
+}
+
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}

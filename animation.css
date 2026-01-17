@@ -14,37 +14,46 @@
     animation-direction: alternate-reverse;
 }
 
+
+
+
+
 @keyframes animation-container {
     0%{
         background-color:gold;
-        left: 20px;
-        top: 20px;
+        transform: scale(1);
+        left: 90px;
+        top: 50px;
     }
 
     25%{
         background-color:orange;
-        left: 20px;
-        top: 200px;
+        transform: scale(2);
+      
         
     }
 
     50%{
         background-color:red;
-       left: 200px;
-       top: 200px;
+        transform: scale(2.5);
+       
+       
         
     }
 
     75%{
         background-color:purple;
-        left: 200px;
-        top: 20px;
+        transform: scale(2.8S);
+        left: 900px;
+        top: 50px;
+       
     }
 
     100%{
         background-color:yellow;
-        left: 20px;
-        top: 20px;
+        transform:scale(1);
+        left: 90px;
+        top: 50px;
     }
    
     
@@ -52,4 +61,5 @@
 #animation-container:hover {
     animation-play-state: paused;
     cursor: pointer;
+    size: 500px;
 }

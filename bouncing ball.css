@@ -70,7 +70,3 @@ body {
     animation-duration: 1.2s; /* Faster animation cycle */
     animation-timing-function: cubic-bezier(0.6, -0.28, 0.735, 0.045); /* Very quick ease-in/out */
 }
-.bounce:hover {
-    animation-play-state: paused;
-    cursor: pointer;
-}

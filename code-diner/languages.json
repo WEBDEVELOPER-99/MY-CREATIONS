@@ -1,0 +1,27 @@
+[
+  {
+    "language": "CSS",
+    "level": 1,
+    "challenge": "Select all plates",
+    "hint": "Use the tag selector",
+    "items": [
+      { "tag": "plate" },
+      { "tag": "plate" },
+      { "tag": "cup" }
+    ],
+    "answer": "plate"
+  },
+  {
+    "language": "CSS",
+    "level": 2,
+    "challenge": "Select the special plate",
+    "hint": "Use a class selector",
+    "items": [
+      { "tag": "plate" },
+      { "tag": "plate", "class": "special" },
+      { "tag": "cup" }
+    ],
+    "answer": ".special"
+  }
+]
+  

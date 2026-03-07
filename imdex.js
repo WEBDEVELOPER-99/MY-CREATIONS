@@ -9,6 +9,5 @@
 
   const medical_history = {
     diseases: "Asthma",
-    Years_with_disease: 10,
-} 
-console.log(obj);
+    Years_with_disease: 5,
+  }

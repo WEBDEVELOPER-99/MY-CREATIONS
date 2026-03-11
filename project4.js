@@ -18,9 +18,9 @@
 //  console.log(array);
 
 
-// STRING METHODS
 
- // let str = "Hello WorldJai";
+
+// let str = "Hello WorldJai";
 // console.log(str.startsWith("He"));
 // console.log(str.includes("He"));
 // console.log(str.toLowerCase().replaceAll("i", "2"));

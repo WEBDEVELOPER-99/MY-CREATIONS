@@ -18,6 +18,6 @@
 // Variables can be declared using var, let, or const keyword.
 // EXAMPLE - 
 var abc = 100;
-var def = 200;
+let def = 200;
 console.log(abc);
 console.log(def);

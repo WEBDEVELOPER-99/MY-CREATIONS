@@ -38,14 +38,20 @@
 
 // myInfo("ESAN", 11, "Bhubaneshwar");     
 
-function greet(name, age) {
-    if (age < 18) {
-        return ("Sorry, you are not old enough to enter.");
-    }
-    else {
-        return ("You're the most welcome here, " + name);
-    }
-}
+// function greet(name, age) {
+//     if (age < 18) {
+//         return ("Sorry, you are not old enough to enter.");
+//     }
+//     else {
+//         return ("You're the most welcome here, " + name);
+//     }
+// }
 
-let result = greet("MR. ESAN", 19);
-console.log(result);
+// let result = greet("MR. ESAN", 19);
+// console.log(result);
+
+let abc = 110;
+
+let xyz = 55;
+
+console.log(abc + xyz)

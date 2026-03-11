@@ -18,7 +18,7 @@
 // 3: block scope
 
 // if (true) {
-//     let abc = 10;
+//     let||const abc = 10;
 // }
 // console.log(abc);
 

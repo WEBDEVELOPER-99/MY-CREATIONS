@@ -50,6 +50,27 @@
 // MyPromise.then((res) => console.log(res)).then((data) => console.log(data));
 
 
-fetch("https://fakestoreapi.com/products")
-.then((response) => response.json())
-.then((data) => console.log(data));
+// fetch("https://fakestoreapi.com/products")
+// .then((response) => response.json())
+// .then((data) => data)
+// .then((data) => console.log(data))
+// .catch((error) => console.log("error", error));
+
+
+// let pl = Promise.resolve("I am a resolved promise.");
+// pl.then((res) => console.log(res)).catch((error) => console.log(error)); 
+
+
+let pl1 = Promise.reject("Promise 1");
+let pl2 = Promise.resolve("Promise 2");
+
+Promise.all([pl1, pl2])
+.then((res) => console.log(res))
+.catch((error) => console.log(error));
+
+
+fetch("https://dummyjson.com/products")
+ .then((response) => response.json())
+ .then((data) => data)
+ .then((data) => console.log(data))
+ .catch((error) => console.log("error", error));

@@ -26,22 +26,30 @@
 // 2. fulfilled
 // 3. rejected
 
-function promiseFunction(resolve, reject) {
-    let Mypercentage = 69.38
-    if (Mypercentage >= 97) {
-        resolve("YES!!!!, I CAN NOW GET A PS5!!!😁😀");
-    } else {
-        reject("I think my marks were not good enough, but.... no worries, i'll do better next time😊.");
-    }
-}
-function handleFulfilled(resolve) {
- console.log(resolve);
-}
- function handleRejected(reject) {
-    console.log(reject);
-}
+// function promiseFunction(resolve, reject) {
+//     resolve("I will buy a Classic Hunter 350 from Royal Enfield!!!😁😀");
+    // let Mypercentage = 69.38
+    // if (Mypercentage >= 97) {
+    //     resolve("YES!!!!, I CAN NOW GET A PS5!!!😁😀");
+    // } else {
+    //     reject("I think my marks were not good enough to get that PS5, but.... no worries, i'll do better next time😊.");
+    // }
+// }
+// function handleFulfilled(result) {
+//  console.log(result);
+// }
+//  function handleRejected(error) {
+//     console.log(error);
+// }
+// function handleFinally() {
+//     console.log("This is the end of the promise.");
+// }
+
+// let MyPromise = new Promise(promiseFunction);
+
+// MyPromise.then((res) => console.log(res)).then((data) => console.log(data));
 
 
-let MyPromise = new Promise(promiseFunction);
-
-MyPromise.then(handleFulfilled, handleRejected);
+fetch("https://fakestoreapi.com/products")
+.then((response) => response.json())
+.then((data) => console.log(data));

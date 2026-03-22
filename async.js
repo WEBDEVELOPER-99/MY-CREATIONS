@@ -61,16 +61,27 @@
 // pl.then((res) => console.log(res)).catch((error) => console.log(error)); 
 
 
-let pl1 = Promise.reject("Promise 1");
-let pl2 = Promise.resolve("Promise 2");
+// let pl1 = Promise.reject("Promise 1");
+// let pl2 = Promise.resolve("Promise 2");
 
-Promise.all([pl1, pl2])
-.then((res) => console.log(res))
+// Promise.all([pl1, pl2])
+// .then((res) => console.log(res))
+// .catch((error) => console.log(error));
+
+
+// fetch("https://dummyjson.com/products")
+//  .then((response) => response.json())
+//  .then((data) => data)
+//  .then((data) => console.log(data))
+//  .catch((error) => console.log("error", error));
+
+let p1 = fetch("https://dummyjson.com/products?limit=120")
+.then((res) => res.json())
+//.then((data) => console.log(data));
+let p2 = fetch("https://dummyjson.com/users?limit=100").then((res) => res.json());
+
+Promise.race([p1, p2])
+.then ((res) => console.log(res))
 .catch((error) => console.log(error));
 
-
-fetch("https://dummyjson.com/products")
- .then((response) => response.json())
- .then((data) => data)
- .then((data) => console.log(data))
- .catch((error) => console.log("error", error));
+// you have to perform some activity, and send the mail.
